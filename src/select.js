@@ -9,11 +9,10 @@ export default function createComponentSelector(components, routeSelector) {
   return function componentSelector(state) {
     const route = routeSelector ? routeSelector(state) : state.route;
     const createComponent = components[route.name];
-    if (createComponent) {
-      return {
-        component: createComponent(route.params),
-      };
-    }
-    return {};
+    const component = createComponent
+      ? createComponent(route.params, route.path)
+      : null;
+
+    return { component };
   };
 }
