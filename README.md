@@ -1,6 +1,8 @@
 # Redux Route
 
-> How would you implement routing if the browser's address bar was just a regular input element?
+## How would you implement routing if the address bar was just a regular input element?
+
+[![Build Status](https://travis-ci.org/fgnass/redux-route.svg?branch=master)](https://travis-ci.org/fgnass/redux-route)
 
 By default redux-route uses the [addressbar](https://www.npmjs.com/package/addressbar) module which makes the window's location behave like any other input field.
 
