@@ -1,4 +1,4 @@
-import { createRouter, history, hash } from '../src';
+import { createRouter, auto } from '../src';
 
 const routes = {
   home: '/',
@@ -6,4 +6,4 @@ const routes = {
   total: '/path/to/total',
 };
 
-export default createRouter(routes, hash);
+export default createRouter(routes, auto);

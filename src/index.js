@@ -4,7 +4,7 @@ import routeReducer from './reducer';
 import selectComponent from './select';
 
 import hash from './adapter/hash';
-import history from './adapter/history';
+import addressbar from './adapter/addressbar';
 import auto from './adapter/auto';
 import fixed from './adapter/fixed';
 
@@ -13,7 +13,7 @@ function createAdapter(adapt) {
   if (typeof adapt === 'function') return adapt();
   return adapt;
 }
-function createRouter(routes, adapt = hash) {
+function createRouter(routes, adapt = auto) {
   const adapter = createAdapter(adapt);
   const match = matcher(routes);
 
@@ -66,7 +66,7 @@ export {
   routeReducer,
   selectComponent,
   hash,
-  history,
+  addressbar,
   auto,
   fixed,
 };

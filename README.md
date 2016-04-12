@@ -55,8 +55,8 @@ connect(mapStateToProps)(Component);
 Redux-route provides several adapters to obtain or modify the actual location:
 
 * `hash`: Uses `location.hash` and `hashchange` events and also works in legacy browsers.
-* `history`: Uses the HTML5 history API via [addressbar](https://www.npmjs.com/package/addressbar).
-* `auto`: Uses `history` if supported and falls back to `hash`. This is the default.
+* `addressbar`: Uses the [addressbar](https://www.npmjs.com/package/addressbar) module.
+* `auto`: Uses `addressbar` if supported and falls back to `hash`. This is the default.
 * `fixed`: A static URL for server-side routing. Requires no DOM.
 
 The adapter interface is very simple so you can provide your own implementation to match your needs.
