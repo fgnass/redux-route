@@ -1,6 +1,6 @@
 {
   "name": "redux-route",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ideomatic routing for Redux",
   "author": "Felix Gnass <fgnass@gmail.com>",
   "license": "MIT",
